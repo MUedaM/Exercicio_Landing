@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>Animus Flux</title>
+</head>
+<body>
+    <section class="background">
+        <video class="background__video" id="videoBackground" muted loop>
+            <source src="https://se-exercicio-landing.vercel.app/one-punch-man-hero.mp4" type="video/mp4">
+        </video>
+    </section>
+    <header class="header header--is-hidden">
+        <picture class="header__logo">
+            <source media="(max-width: 960px)" srcset="./dist/images/logo-site-mobile.png" alt="Logo do site">
+            <img src="https://se-exercicio-landing.vercel.app/logo-site.png" alt="Logo do site">
+        </picture>
+        <div class="header__login">
+            <a href="#home" class="text--button--header"><b>Quero Assinar</b></a>
+        </div>
+    </header>
+    <div class="container">
+        <section id="home" class="hero">
+            <div class="hero__midia">
+                <video class="hero__midia__video" id="videoHero" muted loop>
+                    <source src="https://se-exercicio-landing.vercel.app/one-punch-man-hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero__midia__button">
+                    <button class="hero__midia__button__play hero__midia__button__play--is-active">
+                        <svg data-icon="PauseMedium" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 3C4.22386 3 4 3.22386 4 3.5V20.5C4 20.7761 4.22386 21 4.5 21H9.5C9.77614 21 10 20.7761 10 20.5V3.5C10 3.22386 9.77614 3 9.5 3H4.5ZM14.5 3C14.2239 3 14 3.22386 14 3.5V20.5C14 20.7761 14.2239 21 14.5 21H19.5C19.7761 21 20 20.7761 20 20.5V3.5C20 3.22386 19.7761 3 19.5 3H14.5Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                    <button class="hero__midia__button__play">
+                        <svg data-icon="PlayMedium" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                    <button class="hero__midia__button__muted hero__midia__button__muted--is-active">
+                        <svg data-icon="VolumeOffMedium" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 4.00003C11 3.59557 10.7564 3.23093 10.3827 3.07615C10.009 2.92137 9.57889 3.00692 9.29289 3.29292L4.58579 8.00003H1C0.447715 8.00003 0 8.44774 0 9.00003V15C0 15.5523 0.447715 16 1 16H4.58579L9.29289 20.7071C9.57889 20.9931 10.009 21.0787 10.3827 20.9239C10.7564 20.7691 11 20.4045 11 20V4.00003ZM5.70711 9.70714L9 6.41424V17.5858L5.70711 14.2929L5.41421 14H5H2V10H5H5.41421L5.70711 9.70714ZM15.2929 9.70714L17.5858 12L15.2929 14.2929L16.7071 15.7071L19 13.4142L21.2929 15.7071L22.7071 14.2929L20.4142 12L22.7071 9.70714L21.2929 8.29292L19 10.5858L16.7071 8.29292L15.2929 9.70714Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                    <button class="hero__midia__button__muted">
+                        <svg data-icon="VolumeMediumMedium" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 4.00003C11 3.59557 10.7564 3.23093 10.3827 3.07615C10.009 2.92137 9.57889 3.00692 9.29289 3.29292L4.58579 8.00003H1C0.447715 8.00003 0 8.44774 0 9.00003V15C0 15.5523 0.447715 16 1 16H4.58579L9.29289 20.7071C9.57889 20.9931 10.009 21.0787 10.3827 20.9239C10.7564 20.7691 11 20.4045 11 20V4.00003ZM5.70711 9.70714L9 6.41424V17.5858L5.70711 14.2929L5.41421 14H5H2V10H5H5.41421L5.70711 9.70714ZM17.0709 4.92897C18.9462 6.80433 19.9998 9.34787 19.9998 12C19.9998 14.6522 18.9462 17.1957 17.0709 19.0711L15.6567 17.6569C17.157 16.1566 17.9998 14.1218 17.9998 12C17.9998 9.87831 17.157 7.84347 15.6567 6.34318L17.0709 4.92897ZM14.2428 7.7574C15.368 8.88262 16.0001 10.4087 16.0001 12C16.0001 13.5913 15.368 15.1175 14.2428 16.2427L12.8285 14.8285C13.5787 14.0783 14.0001 13.0609 14.0001 12C14.0001 10.9392 13.5787 9.92176 12.8285 9.17161L14.2428 7.7574Z" fill="currentColor"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hero__info" id="heroInfo">
+                <div class="hero__info__logo">
+                    <img src="https://occ-0-428-185.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABTTHOfmFKlkx3X_O8pRZSt7WHnr5zGzetdWRPlM4Q9ImbP03LZfbihXRxhiK3UpLj3OGL00BmP9POofNy2XCpd9nenc7U5x9tA.webp?r=452" alt="Logo de One Punch Man">
+                </div>
+                <div class="hero__info__form">
+                    <h4 class="title--small">Adicione seu e-mail para continuar recebendo informações:</h4>
+                    <input type="email" placeholder="Email address" class="text--input">
+                    <div class="hero__info__form__button">
+                        <button class="text--button--body">Assinar agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="details">
+            <h2 class="title--medium">One Punch Man</h2>
+            <div class="details__list">
+                <ul>
+                    <li class="text--details first"><b>2019</b></li>
+                    <li class="text--details first"><b>2 temporadas</b></li>
+                    <li class="text--details first"><b>A14</b></li>
+                    <li class="text--details first"><b>Anime</b></li>
+                </ul>
+            </div>
+            <div class="details__info">
+                <p class="details__info__history text--small">O super-herói mais forte do mundo pode matar qualquer um com um só golpe. Mas, com uma vida sem desafios, ele sofre com o tédio e a depressão.</p>
+                <p class="details__info__directory text--small">Elenco: Makoto Furukawa, Kaito Ishikawa, Yuki Kaji, Aoi Yuki, Kazuhiro Yamaji, Kenjiro Tsuda, Minami Takayama, Tessho Genda, Hiroki Yasumoto, Takahiro Sakurai</p>
+            </div>
+        </section>
+        <section class="subscription">
+            <div class="subscription__logo">
+                <button data-tab-button="crunchyroll" class="subscription__logo__button"><img src="https://se-exercicio-landing.vercel.app/logo-crunchyroll.png" alt="Logo da Crunchyroll"></button>
+                <button data-tab-button="netflix" class="subscription__logo__button" style="padding: 0.5rem 1.75rem;"><img src="https://se-exercicio-landing.vercel.app/logo-netflix.png" alt="Logo da NetFlix"></button>
+                <button data-tab-button="prime-video" class="subscription__logo__button"><img src="https://se-exercicio-landing.vercel.app/logo-prime-video.png" alt="Logo da Prime Video"></button>
+            </div>
+            <div data-tab-id="introduction" class="subscription__introduction subscription__introduction--is-active">
+                <h2 class="title--big">Clique acima aonde prefere assistir</h2>
+            </div>
+            <div data-tab-id="crunchyroll" class="subscription__crunchyroll">
+                <div class="subscription__crunchyroll__emoji">
+                    <img src="https://se-exercicio-landing.vercel.app/triste.png">
+                </div>
+                <div class="subscription__crunchyroll__text">
+                    <p class="text--medium"><b>Infelizmente, os vídeos desta série não estão disponíveis no momento na https://www.crunchyroll.com</b></p>
+                </div>
+            </div>
+            <div data-tab-id="netflix" class="subscription__netflix">
+                <p class="text--medium"><b>Confira os planos de assinatura da NetFlix para ter acesso à esta serie:</b></p>
+                <div class="subscription__netflix__type">
+                    <a href="#">
+                        <div class="subscription__netflix__type__first">
+                            <h2 class="title--medium">Padrão com anúncios</h2>
+                            <h3 class="title--xsmall">1080p</h3>
+                            <p class="text--small--subs">Boa qualidade de vídeo</p>
+                            <p class="text--small--subs">Menos anuncios que você pensa</p>
+                            </br>
+                            <p class="text--medium--subs price">R$ 20,90/mês</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="subscription__netflix__type__second">
+                            <h2 class="title--medium">Padrão</h2>
+                            <h3 class="title--xsmall">1080p</h3>
+                            <p class="text--small--subs">Boa qualidade de video</p>
+                            <p class="text--small--subs">Sem anuncios</p>
+                            </br>
+                            <p class="text--medium--subs price">R$ 44,90/mês</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="subscription__netflix__type__third">
+                            <h2 class="title--medium">Premium</h2>
+                            <h3 class="title--xsmall">4k+HDR</h3>
+                            <p class="text--small--subs">Melhor qualidade de video</p>
+                            <p class="text--small--subs">Som imersivo (áudio espacial)</p>
+                            <p class="text--small--subs">Sem anuncios</p>
+                            <p class="text--medium--subs price">R$ 55,90/mês</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div data-tab-id="prime-video" class="subscription__prime-video">
+                <h2 class="title--medium">Filmes, séries, esportes e muito mais</h2>
+                <p class="text--small">Assista à esta serie que está disponivel no catalogo do Prime Video. O plano anual, você pode parcelar em até 12x de R$ 13,90/mês sem juros (R$ 166,80 por ano). Assista sem anúncios por mais R$ 10,00/mês</p>
+                <div class="subscription__prime-video__button">
+                    <a href="#" class="text--button--prime"><b>Comece seu teste gratuito de 30 dias</b></a>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <h2 class="title--medium">Perguntas frequentes</h2>
+            <ul class="faq__questions">
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--medium">
+                        A resposta da pergunta
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--medium">
+                        A resposta da pergunta
+                    </div>
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--medium">
+                        A resposta da pergunta
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <p class="text--small"><b>Siga-nos nas redes sociais</b></p>
+            <div class="footer__links">
+                <a href="#"><img class="footer__links__logo" src="https://se-exercicio-landing.vercel.app/logo-twitter.png" alt="Twitter"></a>
+                <a href="#"><img class="footer__links__logo" src="https://se-exercicio-landing.vercel.app/logo-facebook.png" alt="Facebook"></a>
+                <a href="#"><img class="footer__links__logo" src="https://se-exercicio-landing.vercel.app/logo-instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="footer__final">
+                <div class="footer__final__text">
+                    <p class="text--xsmall">© 2025 Animus Flux e suas empresas afiliadas. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./src/scripts/main.js"></script>
+</html>

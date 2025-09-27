@@ -1,0 +1,70 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: variaveis.$colorHeader;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    transition: background-color .5s ease;
+
+    &--is-hidden {
+        background-color: transparent;
+        position: relative;
+
+        .header__logo {
+            margin: 0 auto;
+
+            source {
+                margin-left: 0rem;
+            }
+        }
+        
+        .header__login a {
+            opacity: 0;
+        }
+    }
+
+    &__logo {
+        margin-left: 4rem;
+
+        img {
+            position: relative;
+            z-index: 2;
+            height: 3rem;
+            padding: 1rem 0;
+            background-color: transparent;
+        }
+
+        source {
+            margin-left: 4rem;
+        }
+
+        @media (max-width: 960px) {
+            margin: 0;
+        }
+    }
+
+    &__login {
+        
+        a {
+            position: absolute;
+            z-index: 2;
+            right: 4rem;
+            top: 1.5rem;
+            background-color: variaveis.$colorSite;
+            padding: .5rem;
+            border-radius: 1.5rem;
+            text-decoration: none;
+            transition: filter .5s ease;
+            opacity: 1;
+
+            &:hover {
+                filter: brightness(.7);
+            }
+        }
+    }
+}

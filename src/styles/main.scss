@@ -1,0 +1,119 @@
+@use 'variaveis';
+@use 'background';
+@use 'header';
+@use 'hero';
+@use 'details';
+@use 'subscription';
+@use 'faq';
+@use 'footer';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+.container {
+    padding: 0 3rem;
+
+    @media (max-width: 960px) {
+        padding: 0 1.5rem;
+    }
+}
+
+.title--big {
+    font-size: 3rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.title--medium {
+    font-size: 1.5rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.title--small {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: variaveis.$colorPrincipal;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: variaveis.$colorPrincipal;
+    }
+}
+
+.title--xsmall {
+    font-size: 1.125rem;
+    color: variaveis.$colorSecondary;
+}
+
+.text--button--header {
+    font-size: 1rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.text--button--body {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.text--button--prime {
+    font-size: 1rem;
+    color: variaveis.$colorLetter;
+}
+
+.text--input {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text--details {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.text--medium {
+    font-size: 1.25rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.text--small {
+    font-size: 1rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.text--xsmall {
+    font-size: 0.875rem;
+    color: variaveis.$colorPrincipal;
+}
+
+.text--medium--subs {
+    font-size: 1.125rem;
+    color: variaveis.$colorSecondary;
+}
+
+.text--small--subs {
+    font-size: 1rem;
+    color: variaveis.$colorSecondary;
+}
+
+.text--small--subs:before {
+    content: '✔ ';
+
+}
