@@ -15,12 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         videoPrimary.classList.add('hero__midia__video--is-visible');
         videoPrimary.play();
-    }, 5000);
+        buttonPlay[0].classList.add('hero__midia__button__play--is-active')
+        buttonMuted[0].classList.add('hero__midia__button__muted--is-active')
+    }, 2000);
 
     setTimeout(() => {
         videoSecondary.classList.add('background__video--is-visible');
         videoSecondary.play();
-    }, 5000);
+    }, 2000);
 
     for (let i = 0; i < buttonPlay.length; i++) {
         buttonPlay[i].addEventListener('click', function() {
